@@ -13,6 +13,10 @@ public class Teste1SemInjecao {
         Cliente joao = new Cliente("João da Silva", "joao@email.com", "47-9999-5555");
         Cliente maria = new Cliente("Maria Madalena", "maria@email.com", "47-8888-4444");
 
+        /*
+
+        // EXEMPLO SEM INJEÇÃO DE DEPENDÊNCIA
+
         // Sem injeção de dependência - Notificar cliente por e-mail
         AtivacaoClienteService ativacaoClienteService = new AtivacaoClienteService();
         ativacaoClienteService.ativarCliente(joao);
@@ -22,6 +26,10 @@ public class Teste1SemInjecao {
         EmissaoNotaFiscalService emissaoNotaFiscalService = new EmissaoNotaFiscalService();
         emissaoNotaFiscalService.emitir(joao, new Produto("iPhone 256 15 PRO", new BigDecimal(13900)));
         emissaoNotaFiscalService.emitir(maria, new Produto("MacBook Air 256 PRO", new BigDecimal(19900)));
+
+        // Pode ainda ser alterado o notificador dentro da classe para SMS.
+
+         */
 
     }
 }
